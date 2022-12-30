@@ -1,4 +1,4 @@
-Enunciado del ejercicio:
+**Enunciado del ejercicio:**
 
 En este ejercicio practicarás las estructuras de control, para ello deberás crear:
 
@@ -17,10 +17,10 @@ d)Para el bucle For, crea una variable numeroFor, esta variable tendrá como val
 
 e)Por último, para el Switch, deberás crear la variable estacion, y distintos case para las cuatro estaciones del año. Dependiendo del valor de la variable estacion se deberá mandar un mensaje por consola informando de la estación en la que está. También habrá que poner un default para cuando el valor de la variable no sea una estación.
 
-![image](https://user-images.githubusercontent.com/101904091/210082191-016afbbb-fcc9-4ebf-be39-80e842ae3a1f.png)
 
-Resolucion:
+**Resolucion:**
 
+a)
 ```
 import java.util.*;
 
@@ -40,3 +40,69 @@ public class Main {
   }
 
 ```
+b)
+
+```
+public class Main {
+    public static void main(String[] args) {
+      int numwhile= 0;
+      while (numwhile<3){
+        System.out.println(" este es el numero " + numwhile);
+        numwhile++;
+      }
+    }
+  }
+```
+
+c)
+```
+public class Main {
+    public static void main(String[] args) {
+      int numwhile= 10;
+    do {
+        System.out.println(numwhile);
+        numwhile--;
+        } while (numwhile<3);{
+        System.out.println(numwhile);
+        numwhile++;
+      }
+    }
+  }
+```
+d)
+```
+public class Main {
+    public static void main(String[] args) {
+      
+      for (int numeroFor=0; numeroFor <= 3; numeroFor++){ 
+        System.out.println(numeroFor);
+    }
+  }
+}
+```
+
+e)
+
+```
+public class Main {
+    public static void main(String[] args) {
+      var estacion= "verano";
+      switch (estacion){
+        case "otonio":
+          System.out.println("es otonio");
+        break;
+        case "primavera":
+          System.out.println("es primavera");
+        break;
+        case "verano":
+          System.out.println("es verano");
+        break;
+        case "invierno":
+          System.out.println("es invierno");
+        break;
+        default:
+        System.out.println("no es ninguna estacion");
+        }
+      }
+    }
+ ```
